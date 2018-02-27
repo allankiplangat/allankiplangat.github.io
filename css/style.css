@@ -1,0 +1,386 @@
+/* ======================================
+	Base Element Styles
+========================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+a {
+	color: #093a58;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* --- Navigation --- */
+
+.name {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+.name,
+.main-nav li {
+	background: #fff;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	border-radius: 2px;
+}
+
+.name a,
+.main-nav a {
+	padding: 10px 15px;
+	display: block;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	text-align: center;
+	background: #fff;
+}
+
+.main-footer {
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+	padding: 2em 0;
+	background: #d9e4ea;
+	margin-top: 30px;
+}
+
+.main-footer {
+	text-align: center;
+}
+
+/* ======================================
+	Media Query
+========================================= */
+
+@media (min-width: 769px) {
+
+	body {
+		padding-top: 60px;
+	}
+
+	.main-header {
+		position: fixed;
+		box-shadow: 0 1px 4px rgba(0,0,0,.4);
+		width: 100%;
+		top: 0;
+		z-index: 1000;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.primary,
+	.secondary {
+		width: 50%;
+	}
+
+	.name,
+	.col {
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (min-width: 1025px) {
+	
+	.container {
+		width: 80%;
+		max-width: 1150px;
+	}
+
+	.primary {
+		width: 40%;
+	}
+
+	.secondary,
+	.third {
+		width: 30%;
+	}
+
+}
+
+.form-section{
+    padding-top: 50px;
+}
+
+/* ======================================
+	Form
+========================================= */
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
+
+/* ======================================
+	Profile card
+========================================= */
+
+.card-profile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+.card-section{
+	padding-top: 90px;
+	
+}
+
+/* ======================================
+	Comments 
+========================================= */
+
+input::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder {
+	color: #ced2db;
+}
+input::-moz-placeholder, 
+textarea::-moz-placeholder {
+	color: #ced2db;
+}
+input:-moz-placeholder, 
+textarea:-moz-placeholder {
+	color: #ced2db;
+}
+input:-ms-input-placeholder, 
+textarea:-ms-input-placeholder {
+	color: #ced2db;
+}
+
+p {
+line-height: 1.3125rem;
+}
+
+
+.comments {
+	margin: 2.5rem auto 0;
+	max-width: 60.75rem;
+	padding: 0 1.25rem;
+}
+
+.comment-wrap {
+	margin-bottom: 1.25rem;
+	display: table;
+	width: 100%;
+	min-height: 5.3125rem;
+}
+
+.photo {
+	padding-top: 0.625rem;
+	display: table-cell;
+	width: 3.5rem;
+}
+.photo .avatar {
+	height: 2.25rem;
+	width: 2.25rem;
+	border-radius: 50%;
+	background-size: contain;
+}
+
+.comment-block {
+	padding: 1rem;
+	background-color: #fff;
+	display: table-cell;
+	vertical-align: top;
+	border-radius: 0.1875rem;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+.comment-block textarea {
+	width: 100%;
+	resize: none;
+}
+
+.comment-text {
+	margin-bottom: 1.25rem;
+}
+
+.bottom-comment {
+	color: #acb4c2;
+	font-size: 0.875rem;
+}
+
+.comment-date {
+	float: left;
+}
+
+.comment-actions {
+	float: right;
+}
+.comment-actions li {
+	display: inline;
+	margin: -2px;
+	cursor: pointer;
+}
+.comment-actions li.complain {
+	padding-right: 0.75rem;
+	border-right: 1px solid #e1e5eb;
+}
+.comment-actions li.reply {
+	padding-left: 0.75rem;
+	padding-right: 0.125rem;
+}
+.comment-actions li:hover {
+	color: #0095ff;
+}
+
+
+/* ======================================
+	Businesses Details 
+========================================= */
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+
+.card {
+	background: white;
+	margin-bottom: 2em;	
+}
+
+.card a {
+	color: black;
+	text-decoration: none;
+}
+
+.card a:hover {
+	box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+}
+
+.card-content {
+	padding: 1.4em;
+}
+
+.card-content h2 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: bold;
+}
+
+.card-content p {
+	font-size: 80%;
+}
+
+/* Flexbox stuff */
+
+.cards {
+   padding-top: 90px;	
+   padding-left: 40px;
+   padding-right: 40px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.card {
+	flex: 0 1 24%;
+}
+
